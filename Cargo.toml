@@ -1,0 +1,13 @@
+[package]
+name = "pdf2epub"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Native Windows app that converts PDF files to EPUB e-books"
+
+[dependencies]
+image = { version = "0.25.10", default-features = false, features = ["png", "jpeg"] }
+native-windows-derive = "1.0.5"
+native-windows-gui = { version = "1.0.13", features = ["file-dialog", "progress-bar", "notice", "image-decoder", "high-dpi"] }
+pdf-extract = "0.12.1"
+zip = { version = "9.1.2", default-features = false, features = ["deflate"] }
